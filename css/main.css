@@ -1,0 +1,14 @@
+/* 
+Name: Mia Ehrlich
+Assignment: 06
+Purpose: This is the main CSS file for a single page web site using bootstrap for most of the styling
+*/
+
+#img_about {
+    width: 200px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}

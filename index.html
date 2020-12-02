@@ -1,0 +1,152 @@
+<!-- 
+Name: Mia Ehrlich
+Assignment: 06
+Purpose: This is the html for a single page site using bootstrap and Jquery
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="favicon.gif" type="image/gif">
+
+        <!-- Bootstrap & CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <title>JQuery &amp; Bootstrap Demo</title>
+    </head>
+    <body>
+        <!-- Nav Bar Begin -->
+        <nav class="navbar navbar-expand-md  navbar-dark bg-dark" id="top">
+                <a class="navbar-brand font-weight-lighter" href="index.html">Mia Rose <span class="text-uppercase text-muted">Photography</span></a>
+                <button type="button" class="navbar-toggler btn" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <!--
+                            this doesn't do anything because we have not
+                            attached any functionality to it yet
+                        -->
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+        </nav>
+        <!-- Nav Bar End -->
+        <!-- Begin main -->
+        <main>
+            <!-- Begin About section -->
+            <section class="mb-4" id="about">
+                <div class="container">
+                    <h2 class="text-uppercase font-weight-lighter mt-3">About</h2>
+                    <div class="row mx-auto">
+                        <div class="col-xs-12">
+                            <img id="img_about" class="float-left mr-3" src="images/Mia.jpg" alt="">
+                            <p class="text-justify">                            
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil ad, ex eaque fuga minus reprehenderit asperiores earum incidunt. Possimus maiores dolores voluptatum enim soluta omnis debitis quam ab nemo necessitatibus.
+                            </p>
+                            <p class="text-justify">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil ad, ex eaque fuga minus reprehenderit asperiores earum incidunt. Possimus maiores dolores voluptatum enim soluta omnis debitis quam ab nemo necessitatibus.
+                            </p>
+                            <p class="text-justify mb-5">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil ad, ex eaque fuga minus reprehenderit asperiores earum incidunt. Possimus maiores dolores voluptatum enim soluta omnis debitis quam ab nemo necessitatibus.
+                            </p>
+                        </div>
+                        <div class="col text-center">
+                            <a href="#top" class="btn btn-outline-secondary btn-sm" role="button" aria-pressed="true">Back To Top</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End About -->
+            <!-- Begin Gallery -->
+            <section class="mb-4" id="gallery">
+                <div class="container">
+                    <h2 class="text-uppercase font-weight-lighter mt-3">Gallery</h2>
+                    <div class="row  mt-3">
+                        <div class="col-xs-12 col-md-4 pb-4">
+                            <img class="img-fluid" src="images/Goats.jpg" alt="">
+                        </div>
+                        <div class="col-xs-12 col-md-4  pb-4">
+                            <img class="img-fluid" src="images/Sunset.jpg" alt="">
+                        </div>
+                        <div class="col-xs-12 col-md-4 pb-4">
+                            <img class="img-fluid" src="images/Magic.jpg" alt="">
+                        </div>
+                        <div class="col-xs-12 col-md-4 pb-4">
+                            <img class="img-fluid" src="images/BearFall.jpg" alt="">
+                        </div>
+                        <div class="col-xs-12 col-md-4 pb-4">
+                            <img class="img-fluid" src="images/Skulls.jpg" alt="">
+                        </div>
+                        <div class="col-xs-12 col-md-4 mb-5">
+                            <img class="img-fluid" src="images/Grove.jpg" alt="">
+                        </div>
+                        <div class="col text-center">
+                            <a href="#top" class="btn btn-outline-secondary btn-sm" role="button" aria-pressed="true">Back To Top</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Gallery -->
+            <!-- Begin Contact -->
+            <section id="contact">
+                <div class="container">
+                    <h2 class="text-uppercase font-weight-lighter mt-3">Contact</h2>
+                    <div class="text-center mt-3 mb-4"  id="msg_content">
+                        <p>Got a question? Fill out your information and I'll be in touch shortly.</p>
+                    </div>
+                    <form action="email.php" method="post" name="contact-form" id="contactForm">
+                    <div class="row mt-3">
+                            <div class="form-group col-xs-12 col-md-6">
+                                <input id="nameBox" name="name" type="text" placeholder="Your Name" maxlength="64" value="" class="form-control">
+                            </div>
+                            <div class="form-group col-xs-12 col-md-6">
+                                <input id="emailBox" name="email" type="email" placeholder="Return Email" maxlength="64" value="" class="form-control">
+                            </div>
+                            <div class="form-group col-xs-12 col-md-6">
+                                <input id="emailBox2" name="email2" type="email" placeholder="Re-Enter Email" maxlength="64" value="" class="form-control">
+                            </div>
+                            <div class="form-group col-xs-12 col-md-6">
+                                <input id="subjectBox" name="subject" type="text" placeholder="Subject" maxlength="64" value="" class="form-control">
+                            </div>
+                            <div class="form-group col-xs-12 col-md-12">
+                                <textarea id="messageBox" name="message" rows="4" cols="30" placeholder="Message" maxlength="1000" value="" class="form-control"></textarea>
+                            </div>
+                            <div class="form-group col-xs-12 col-md-6">
+                                <button id="submitBtn" type="button" class="btn btn-secondary form-control mx-auto">Submit</button>
+                            </div>
+                            <div class="form-group col-xs-12 col-md-6 mb-5">
+                                <button id="resetBtn" type="button" class="btn btn-secondary form-control mx-auto">Reset</button>                            
+                            </div>
+                            <div class="col text-center mb-5">
+                                <a href="#top" class="btn btn-outline-secondary btn-sm" role="button" aria-pressed="true">Back To Top</a>
+                            </div>
+                    </div>
+                </form>
+                </div>
+            </section>
+            <!-- End Contact -->
+        </main>
+        <!-- End main -->
+        <!-- jQuery first then Bootstrap JS -->
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
